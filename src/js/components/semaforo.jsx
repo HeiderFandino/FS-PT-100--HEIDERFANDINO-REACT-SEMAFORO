@@ -12,9 +12,9 @@ export const Semaforo = () => {
 
                  <div className="base">.</div>
                 <div className="semaforo">
-                    <div className={`luz roja ${selected == "roja" ? "shadowLightr" : "" }`} onClick={()=> setSelected("roja")} ></div>
-                    <div className= {`luz amarilla ${selected == "amarilla" ? "shadowLighta" : "" }`} onClick={()=> setSelected("amarilla")}></div>
-                    <div className={`luz verde ${selected == "verde" ? "shadowLightv" : "" }`} onClick={()=> setSelected("verde")}></div>
+                    <div className={`luz roja ${selected == "roja" ? "shadowLightr" : "" }`} onClick={()=> handleClick("roja")} ></div>
+                    <div className= {`luz amarilla ${selected == "amarilla" ? "shadowLighta" : "" }`} onClick={()=> handleClick("amarilla")}></div>
+                    <div className={`luz verde ${selected == "verde" ? "shadowLightv" : "" }`} onClick={()=> handleClick("verde")}></div>
                 </div>
                
             </div>
